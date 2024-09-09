@@ -1,0 +1,22 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+
+import { IonicModule } from '@ionic/angular';
+
+import { NativePageRoutingModule } from './native-routing.module';
+
+import { NativePage } from './native.page';
+import { NativeModule } from 'src/app/native/native.module';
+
+@NgModule({
+  imports: [
+    CommonModule,
+    FormsModule,
+    IonicModule,
+    NativePageRoutingModule,
+    NativeModule
+  ],
+  declarations: [NativePage]
+})
+export class NativePageModule {}

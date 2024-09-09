@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Main Tab
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Main Tab</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-item>
+    <ion-label> Name of the Station </ion-label>
+    <ion-select [(ngModel)]="stationName" (ionChange)="selectedStation()">
+      <ion-select-option *ngFor="let name of stationList" [value]="name">{{ name }}</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item *ngIf="message">
+    <ion-label><b>Message:</b>  {{ message }}</ion-label>
+  </ion-item>
+</ion-content>

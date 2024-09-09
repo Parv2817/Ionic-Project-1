@@ -1,0 +1,7 @@
+{
+  "name": "ParvPatel-Assignment2",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
